@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+
+
+<div id="map"></div>
+
+
+<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+<script>
+  // get the viz.json url from the CartoDB Editor
+  // - click on visualize
+  // - create new visualization
+  // - make visualization public
+  // - click on publish
+  // - go to API tab
+
+  window.onload = function() {
+      cartodb.createVis('map', 'http://cfa.cartodb.com/api/v2/viz/954a7004-5007-11e4-915b-0e018d66dc29/viz.json');
+    }
+</script>
